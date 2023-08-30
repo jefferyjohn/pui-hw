@@ -4,24 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <title>Bun Bun Bake Shop | Product</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="../assets/logo/favicon.ico" type="image/x-icon">
+  <meta name="description" content="05-630:A PUI | Jeffery John">
 </head>
 
 <body>
-
+  <header>
+    <a href="./index.html">
+      <div class="logo-container">
+        <img class="logo" src="../assets/logo/logo-01.svg" alt="Bun Bun Bake Shop" />
+      </div>
+    </a>
+    <center>
+      <div>
+        <h3><a class="current-page" href="./index.html">PRODUCTS</a></h3>
+        <h3><a href="./cart.html">CART</a></h3>
+      </div>
+    </center>
+  </header>
   <div class="product">
-    <img src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll" />
-    <h2>Original cinnamon roll</h2>
-    <h2>$2.49</h2>
+    <a href="./detail.html"> <!-- Linking to itself, unsure if this is desired behavior -->
+      <img class="img-detail" src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll" />
+      <h2>Original cinnamon roll</h2>
+      <h2>$2.49</h2>
+    </a>
   </div>
   <div class="description">
     Customize our delicious, hand-made cinnamon roll to your liking!
   </div>
-  <div class="options">
-    <div class="glazing"></div>
-    <div class="quantity"></div>
-  </div>
-  <div class="checkout"></div>F
+
+  <center>
+    <div class="options">
+      <select>
+        <option value="glazing">Glazing</option>
+        <option value="quantity">Quantity</option>
+      </select>
+    </div>
+    <div class="checkout">
+      <a href="cart.html">
+        <button onclick="" >Checkout</button>
+      </a>
+    </div>
+  </center>
 </body>
 
 </html>
