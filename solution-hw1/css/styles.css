@@ -14,6 +14,10 @@
     align-items: center;
 }
 
+.product:hover h2 {
+    font-weight: bold;
+}
+
 .description {
     display: flex;
     flex-direction: column;
@@ -37,13 +41,6 @@
     height: 600px;
 }
 
-.logo {
-    width: 400px;
-}
-
-.logo-container {
-    border-bottom: 3px solid #000000;
-}
 .options {
     padding: 20px;
 }
@@ -64,7 +61,7 @@ select {
     padding: 20px;
 }
 
-h2 {
+h2, h3 {
     font-weight: normal;
 }
 
@@ -84,6 +81,7 @@ a {
 a:hover, a:active, .current-page {
     background-color: #ffff00;
     text-emphasis: bold;
+    font-weight: bold;
     padding: 0px 5px 0px;
 }
 
@@ -107,4 +105,22 @@ button:hover {
 
 .cost-amount {
     display: inline;
+}
+
+.logo {
+    width: 400px;
+    background-color: transparent;
+}
+
+.logo-container {
+    border-bottom: 3px solid #000000;
+    background-color: transparent;
+
+}
+
+.logo a {
+    background-color: transparent;
+    text-emphasis: bold;
+    font-weight: bold;
+    padding: 0px;
 }
