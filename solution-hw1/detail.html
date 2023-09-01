@@ -26,7 +26,7 @@
   <div class="product">
     <a href="./detail.html"> <!-- Linking to itself, unsure if this is desired behavior -->
       <img class="img-detail" src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll" />
-      <h2>Original cinnamon roll</h2>
+      <h2 class="product-name">Original cinnamon roll</h2>
       <h2>$2.49</h2>
     </a>
   </div>
@@ -36,14 +36,25 @@
 
   <center>
     <div class="options">
+      <p class="options-label">Glazing:</p>
       <select>
-        <option value="glazing">Glazing</option>
-        <option value="quantity">Quantity</option>
+        <option value="glazing">Keep original</option>
+        <option value="quantity">Sugar milk</option>
+        <option value="quantity">Vanilla milk</option>
+        <option value="quantity">Double chocolate</option>
+      </select>
+      <p class="options-label">Pack size:</p>
+      <select> 
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="6">6</option>
+        <option value="12">12</option>
       </select>
     </div>
-    <div class="checkout">
-      <a href="cart.html">
-        <button onclick="" >Checkout</button>
+    <div class="order">
+      <a class="cost" href="cart.html">
+        <p class="cost-amount">$2.49</p>
+        <button>Add to cart</button>
       </a>
     </div>
   </center>
