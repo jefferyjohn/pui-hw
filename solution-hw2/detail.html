@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bun Bun Bake Shop | Product</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="../assets/logo/favicon.ico" type="image/x-icon">
+  <meta name="description" content="05-630:A PUI | Jeffery John">
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <a href="./index.html">
+        <img class="logo" src="../assets/logo/logo-01.svg" alt="Bun Bun Bake Shop" />
+      </a>
+
+      <div class="navbar">
+        <h3 class="nav-item"><a class="current-page" href="./index.html">PRODUCTS</a></h3>
+        <h3 class="nav-item"><a href="./cart.html">CART</a></h3>
+      </div>
+    </div>
+  </header>
+
+  <h2 class="detail-name">Original cinnamon roll</h2>
+
+  <div class="detail-image">
+    <div class="product">
+      <a href="./detail.html"> <!-- Linking to itself, unsure if this is desired behavior -->
+        <img class="img-detail" src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll" />
+        <h2>$2.49</h2>
+      </a>
+    </div>
+  </div>
+  <div class="detail-options">
+    <div class="description">
+      Customize our delicious, hand-made cinnamon roll to your liking!
+    </div>
+    <div class="options">
+      <p class="options-label">Glazing:</p>
+      <select>
+        <option value="glazing">Keep original</option>
+        <option value="quantity">Sugar milk</option>
+        <option value="quantity">Vanilla milk</option>
+        <option value="quantity">Double chocolate</option>
+      </select>
+      <p class="options-label">Pack size:</p>
+      <select>
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="6">6</option>
+        <option value="12">12</option>
+      </select>
+    </div>
+    <div class="order">
+      <a class="cost" href="cart.html">
+        <p class="cost-amount">$2.49</p>
+        <button>Add to cart</button>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>

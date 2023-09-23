@@ -1,0 +1,176 @@
+body {
+    font-family: helvetica;
+}
+
+.gallery {
+    display: flexbox;
+    flex-direction: row;
+}
+
+.product {
+    display: inline-block;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+.product:hover h2 {
+    font-weight: bold;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+}
+
+.img-gallery {
+    width: 285px;
+    height: 285px;
+    border: 3px solid #000000;
+}
+
+.img-cart {
+    width: 200px;
+    height: 200px;
+}
+
+.img-detail {
+    width: 600px;
+    height: 600px;
+}
+
+.options {
+    padding: 20px;
+}
+
+.options-label {
+    padding-right: 44px;
+    margin: 0px;
+    padding-top: 12px;
+}
+
+select {
+    width: 100px;
+}
+
+.checkout {
+    width: 30%;
+    border-top: 3px solid #000000;
+    padding: 20px;
+}
+
+h2, h3 {
+    font-weight: normal;
+}
+
+.product-name {
+    text-decoration: underline;
+    align-self: left;
+    max-width: 285px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.product-name:hover {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover, a:active, .current-page {
+    background-color: #ffff00;
+    text-emphasis: bold;
+    font-weight: bold;
+    padding: 0px 5px 0px;
+}
+
+button {
+    background: transparent;
+}
+
+button:hover {
+   font-weight: bold;
+}
+
+.order {
+    display: flexbox;
+    align-self: center;
+}
+
+.cost {
+    display: inline-flexbox;
+    font-weight: bold;
+}
+
+.cost-amount {
+    display: inline;
+}
+
+.logo {
+    width: 400px;
+    background-color: transparent;
+    border-bottom: 10px solid #000000;
+}
+
+.logo-container {
+    background-color: transparent;
+
+}
+
+.logo a {
+    background-color: transparent;
+    text-emphasis: bold;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 0px 5px 0px;
+}
+
+.detail-image {
+    display: inline-block;
+}
+
+.detail-options {
+    display: inline-block;
+}
+
+.detail-name > a{
+    style: none;
+}
+
+.product-cart {
+    display: block;
+    padding-left: 390px;
+}
+
+.cart-item-details {
+    display: inline-block;
+}
+
+.cart-item-details > a {
+    color: #000000;
+}
+
+.cart-item-img {
+    display: inline-block;
+}
+
+.checkout {
+    padding-left: 400px;
+}
