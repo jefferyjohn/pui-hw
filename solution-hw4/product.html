@@ -7,13 +7,14 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="shortcut icon" href="../assets/logo/favicon.ico" type="image/x-icon">
   <meta name="description" content="05-630:A PUI | Jeffery John">
+  <script src="js/rollsData.js"></script>
   <script src="js/script.js" defer></script>
 </head>
 
 <body>
   <header>
     <div class="logo-container">
-      <a href="./index.html">
+      <a class="logo-link" href="./index.html">
         <img class="logo" src="../assets/logo/logo-01.svg" alt="Bun Bun Bake Shop" />
       </a>
       <div>
@@ -21,7 +22,7 @@
           <h3 class="nav-item"><a class="current-page" href="./index.html">PRODUCTS</a></h3>
           <h3 class="nav-item"><a href="./cart.html">CART</a></h3>
         </div>
-        <h2 class="detail-name">Our hand-made cinnamon rolls</h2>
+        <h2 id=product-name class="detail-name">Our hand-made cinnamon rolls</h2>
       </div>
     </div>
   </header>
@@ -30,7 +31,8 @@
   <div class="detail-image">
     <div class="product">
       <a href="./product.html">
-        <img class="img-detail" src="../assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll" />
+        <img id="product-image" class="img-detail" src="../assets/products/original-cinnamon-roll.jpg"
+          alt="original cinnamon roll" />
       </a>
     </div>
   </div>
@@ -45,10 +47,8 @@
       <select id="pack-select"></select>
     </div>
     <div class="order">
-      <a class="cost" href="cart.html">
-        <h2 class="cost-amount" id="total-price">$2.49</h2>
-        <button>Add to cart</button>
-      </a>
+      <h2 class="cost-amount" id="total-price">$2.49</h2>
+      <button onclick="addToCart()">Add to cart</button>
     </div>
   </div>
 </body>

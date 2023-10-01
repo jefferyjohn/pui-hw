@@ -1,5 +1,38 @@
 // Reference: https://github.com/interactive-structures/pui-materials/blob/main/in-lab-examples/puinote-lab04/select-example/app.js
+// Reference: https://github.com/interactive-structures/pui-materials/tree/main/in-lab-examples/puinote-lab04/url-params
+
 let totalPrice = 0;
+let cart = [];
+
+let rollType;
+let glazingSelect;
+let packSelect;
+
+class Roll {
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
+        this.glazing = rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+    }
+}
+
+// customize page from link url
+function updateHeading() {
+    const queryString = window.location.search;
+    const params = new URLSearchParams(queryString);
+
+    rollType = params.get('roll');
+
+    // Update the header text
+    const productTitle = document.querySelector('#product-name');
+    productTitle.innerText = rollType + ' Cinnamon Roll';
+
+    // Update the image
+    const productImage = document.querySelector('#product-image');
+    productImage.src = '../assets/products/' + rolls[rollType].imageFile;
+}
+updateHeading();
 
 // Bun Bun Bake Shop - provided glazing and pack sizes
 let glazingOptions = [
@@ -62,8 +95,8 @@ selectElement.addEventListener('change', onSelectValueChange);
 
 // when the user selects a new value -> update the price
 function onSelectValueChange(event) {
-    let glazingSelect = document.querySelector('#glazing-select');
-    let packSelect = document.querySelector('#pack-select');
+    glazingSelect = document.querySelector('#glazing-select');
+    packSelect = document.querySelector('#pack-select');
 
     let glazingPrice = glazingOptions[glazingSelect.value].price;
     let packPrice = packOptions[packSelect.value].price;
@@ -74,12 +107,22 @@ function onSelectValueChange(event) {
 
 // (basePrice + glazingPrice) * packPrice
 function updatePrice(glazingPrice, packPrice) {
-    const basePrice = 2.49;
+    const basePrice = rolls[rollType].basePrice;
     totalPrice = (basePrice + glazingPrice) * packPrice;
     document.querySelector('#total-price').innerHTML = totalPrice;
-    console.log(totalPrice)
-
 
     let formattedPrice = totalPrice.toFixed(2);
     document.querySelector('#total-price').innerHTML = "$" + formattedPrice;
+}
+
+// add to cart
+function addToCart() {
+
+    glaze = glazingOptions[glazingSelect.value].option;
+    pack = packOptions[packSelect.value].option;
+    price = rolls[rollType].basePrice;
+
+    item = new Roll(rollType, glaze, pack, price);
+    cart.push(item);
+    console.log(cart);
 }

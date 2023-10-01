@@ -17,8 +17,10 @@ h1 {
     font-weight: normal;
 }
 
+.product:hover,
 .product:hover h2 {
     font-weight: bold;
+    background-color: #ffff00;
 }
 
 .description {
@@ -99,7 +101,7 @@ a:active,
     background-color: #ffff00;
     text-emphasis: bold;
     font-weight: bold;
-    padding: 0px 5px 0px;
+    padding: 0px;
 }
 
 button {
@@ -130,21 +132,6 @@ button:hover {
     font-weight: bold;
     padding-right: 10px;
 }
-
-.logo {
-    width: 400px;
-    background-color: transparent;
-    padding-right: 20px;
-}
-
-.logo a {
-    background-color: transparent;
-    text-emphasis: bold;
-    font-weight: bold;
-    padding: 0px;
-}
-
-
 
 .navbar {
     display: inline-block;
@@ -204,4 +191,18 @@ button:hover {
 .logo-container {
     display: flex;
     align-items: flex-start;
+}
+
+.logo {
+    width: 400px;
+    background-color: transparent;
+    padding-right: 20px;
+}
+
+.logo-link,
+.logo-link:hover {
+    background-color: transparent;
+    text-emphasis: bold;
+    font-weight: bold;
+    padding: 0px;
 }
