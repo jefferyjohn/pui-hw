@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bun Bun Bake Shop | Shopping Cart</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="../assets/logo/favicon.ico" type="image/x-icon">
+  <meta name="description" content="05-630:A PUI | Jeffery John">
+  <script src="js/cart.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <a class="logo-link" href="./index.html">
+        <img class="logo" src="../assets/logo/logo-01.svg" alt="Bun Bun Bake Shop" />
+      </a>
+
+      <div>
+        <div class="navbar">
+          <h3 class="nav-item"><a href="./index.html">PRODUCTS</a></h3>
+          <h3 class="nav-item"><a class="current-page" href="./cart.html">CART</a></h3>
+        </div>
+        <h1>Our hand-made cinnamon rolls</h1>
+      </div>
+    </div>
+  </header>
+
+  <div class="cart-items">
+    <ul id="roll-checkout">
+      <template id="roll-template">
+        <li>
+          <div class="cart-col-1">
+            <img class="roll-image"></img>
+          </div>
+          <div class="cart-col-2">
+            <span class="roll-name"></span> <br />
+            <span class="roll-glazing"></span> <br />
+            <span class="roll-quantity"></span> <br />
+            <span class="roll-id"></span>
+          </div>
+          <div class="cart-col-3">
+            <span class="roll-price"></span> <br />
+          </div>
+        </li>
+        <button class="roll-remove">Remove</button>
+      </template>
+    </ul>
+  </div>
+  <div class="final-checkout">
+    <h2 id="final-price">Total: $0.00</h2>
+    <a href="cart.html">
+      <button id="checkout-button" onclick="">Checkout</button>
+    </a>
+  </div>
+
+
+</body>
+
+</html>
